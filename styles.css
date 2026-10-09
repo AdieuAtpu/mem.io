@@ -75,7 +75,7 @@ p {
 
 .nav-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   min-height: 52px;
   gap: 28px;
@@ -113,6 +113,7 @@ p {
 
 .nav-button,
 .resource-button {
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +131,7 @@ p {
   font-size: 0.76rem;
 }
 
-.publication-hero {
+.project-hero {
   padding: 128px 20px 86px;
   text-align: center;
 }
@@ -149,14 +150,40 @@ h1 {
   line-height: 1.12;
 }
 
-.authors {
-  margin-bottom: 0;
+.hero-eyebrow {
+  margin-bottom: 18px;
   color: var(--blue);
-  font-size: 1.08rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
 }
 
-.publication-links {
+.hero-summary {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.capability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.capability-tags li {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.project-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -165,6 +192,7 @@ h1 {
 }
 
 .resource-button {
+  text-decoration: none;
   min-height: 43px;
   padding: 0 18px;
   font-size: 0.9rem;
@@ -677,7 +705,7 @@ h1 {
     justify-self: end;
   }
 
-  .publication-hero {
+  .project-hero {
     padding-top: 105px;
     padding-bottom: 64px;
   }
@@ -736,11 +764,12 @@ h1 {
     padding-inline: 11px;
   }
 
-  .publication-links {
+  .project-links {
     gap: 8px;
   }
 
   .resource-button {
+  text-decoration: none;
     min-height: 40px;
     padding-inline: 13px;
     font-size: 0.78rem;
